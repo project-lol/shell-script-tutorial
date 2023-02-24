@@ -56,3 +56,41 @@ echo $MY_VAR
 ```
 
 - 변수를 사용할 때, `$`를 붙여줘야 한다
+
+<br>
+
+## Comparison Operators
+
+- gt : greater than
+- lt : less than
+- ge : greater than or equal to
+- le : less than or equal to
+- eq : equal to
+- ne : not equal to
+
+```bash
+if [ $1 -gt 100 ]
+then
+    echo "The first argument is greater than 100"
+fi
+
+if [ $1 -lt 100 ]
+then
+    echo "The first argument is less than 100"
+fi
+
+if [ $1 -ge 100 ]
+then
+    echo "The first argument is greater than or equal to 100"
+fi
+
+if [ $1 -le 100 ]
+then
+    echo "The first argument is less than or equal to 100"
+fi
+
+if [ $1 -eq 100 ]
+then
+    echo "The first argument is equal to 100"
+fi
+```
