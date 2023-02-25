@@ -70,17 +70,47 @@
 #         ;;
 # esac
 
-case $1 in
-    start)
-        echo "Starting"
-        ;;
-    stop)
-        echo "Stopping"
-        ;;
-    restart)
-        echo "Restarting"
-        ;;
-    *)
-        echo "Don't know"
-        ;;
-esac
+# case $1 in
+#     start)
+#         echo "Starting"
+#         ;;
+#     stop)
+#         echo "Stopping"
+#         ;;
+#     restart)
+#         echo "Restarting"
+#         ;;
+#     *)
+#         echo "Don't know"
+#         ;;
+# esac
+
+# SIMPLE FOR LOOP
+
+# NAMES="Brad Kevin Alice Mark"
+# for NAME in $NAMES
+#     do
+#         echo "Hello $NAME"
+#     done
+
+
+# FOR LOOP TO RENAME FILES
+# FILES=$(ls *.txt)
+# NEW="whatever"
+# for FILE in $FILES
+#     do
+#         echo "Renaming $FILE to new-$FILE"
+#         mv $FILE $NEW-$FILE
+#     done
+
+# 파일 이름 찾기 
+# file_names=$(find /Users/noyechan/Desktop/shell-script-tutorial -name "*.txt")
+
+
+# WHILE LOOP - READ THROUGH A FILE LINE BY LINE 
+LINE=1
+while read -r CURRENT_LINE
+    do
+        echo "$LINE: $CURRENT_LINE"
+        ((LINE++))
+done < "./whatever-new-1.txt"

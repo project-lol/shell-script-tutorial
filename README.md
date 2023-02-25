@@ -111,3 +111,14 @@ fi
 - `-L` : 심볼릭 링크인지 확인
 
 <br>
+
+# While Loop
+
+- `while` loop는 조건이 참인 동안에 계속해서 반복한다
+
+```bash
+while [ 조건 ]
+do
+    명령어
+done
+```
