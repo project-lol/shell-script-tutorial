@@ -122,3 +122,40 @@ do
     명령어
 done
 ```
+
+<br>
+
+## Function
+
+- 함수를 선언하는 방법
+
+```bash
+function my_function() {
+    echo "Hello World"
+}
+```
+
+## Function with Arguments
+
+- 함수에 인자를 넘겨주는 방법
+
+```bash
+function my_function() {
+    echo "Hello $1"
+}
+```
+
+- 인자를 넘겨주는데, 일반적인 언어와 달리 인자부분에 변수를 작성하지 않고, `$1`과 같이 작성한다
+- `$1`은 첫번째 인자를 의미한다
+
+<br>
+
+## CREATE FOLDER AND WRITE TO A FILE
+
+- `mkdir` : 디렉토리를 생성하는 명령어
+- `>` : 파일에 내용을 쓰는 명령어
+
+```bash
+mkdir my_folder
+echo "Hello World" > my_folder/my_file.txt
+```
